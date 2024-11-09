@@ -1,0 +1,29 @@
+{
+    "name": "pobo-builder/pobo-php-sdk",
+    "description": "PHP SDK for PoBo API",
+    "type": "library",
+    "require-dev": {
+        "phpstan/phpstan": "^1.12"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Pobo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Marek Žák",
+            "email": "marek@zakmarek.cz"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "php": ">=8.0",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "scripts": {
+        "phpstan": "vendor/bin/phpstan analyse --configuration=phpstan.neon"
+    }
+}
