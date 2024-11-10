@@ -66,6 +66,7 @@ Bulk upload multiple products to the system:
                 'guid' => '302b8ad6-07d5-11ec-b98c-0cc47a6c9370',
                 'name' => 'Test Product from API',
                 'short_description' => 'This is a test product created via API.',
+                'description' => '<p>HTML description of the product.</p>',
                 'is_visible' => true,
                 'categories' => [1, 2, 3],
                 'images' => [
