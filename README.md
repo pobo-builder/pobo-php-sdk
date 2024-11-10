@@ -5,7 +5,7 @@ Pobo SDK is a PHP library designed to integrate with the Pobo system. It provide
 ## Installation
 
 ```bash
-composer require pobo/sdk
+composer require pobo-builder/pobo-php-sdk
 ```
 
 ## Authentication
