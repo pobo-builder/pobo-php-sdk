@@ -17,7 +17,7 @@
             "email": "marek@zakmarek.cz"
         }
     ],
-    "minimum-stability": "beta",
+    "prefer-stable": true,
     "require": {
         "php": ">=8.0",
         "ext-curl": "*",
