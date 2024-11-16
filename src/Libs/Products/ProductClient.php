@@ -38,6 +38,10 @@ final class ProductClient
                 ]
             );
 
+        if (isset($products['error'])) {
+            throw new ApiClientException((string) $products['error']);
+        }
+
         return ProductModel::fromArrayCollection(array_map(
             static fn(array $product): array => [
                 'id' => (int) $product['id'],
@@ -88,6 +92,10 @@ final class ProductClient
                 '/api/v2/public/product',
                 $values
             );
+
+        if (isset($response['error'])) {
+            throw new ApiClientException((string) $response['error']);
+        }
 
         return $response;
     }
