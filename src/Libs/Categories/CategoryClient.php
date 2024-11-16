@@ -43,7 +43,7 @@ final class CategoryClient
             throw new ApiClientException((string) $categories['error']);
         }
 
-        if (!is_array($categories) || !isset($categories['result']['category']) || !is_array($categories['result']['category'])) {
+        if (!isset($categories['result']['category']) || !is_array($categories['result']['category'])) {
             throw new ApiClientException('Unexpected response format');
         }
 
